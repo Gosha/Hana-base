@@ -5,7 +5,12 @@
     <title><?=get_title($title)?></title>
     <?php if(isset($favicon)): ?><link rel='shortcut icon' href='<?=$favicon?>'/><?php endif; ?>
     <?php if(isset($modernizr)):?><script src='<?=$modernizr?>'></script><?php endif; ?>
-    <link rel='stylesheet' type='text/css' href='<?=$stylesheet?>'/>
+    <?php foreach($javascripts as $javascript): ?>
+      <script src='<?=$javascript?>'></script>
+    <?php endforeach; ?>
+    <?php foreach($stylesheets as $stylesheet): ?>
+      <link rel='stylesheet' type='text/css' href='<?=$stylesheet?>'/>
+    <?php endforeach; ?>
   </head>
   <body>
     <div id="header-container">

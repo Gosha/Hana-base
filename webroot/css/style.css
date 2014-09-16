@@ -1,42 +1,56 @@
 /**
  * General elements
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 body {
   color: #333;
-  font-family: arial, sans-serif;
+  font-family: 'Roboto', arial, sans-serif;
+  /* background-color: #555; */
+  background-color: #C5D0C1;
+  background-image: url('../img/bg.png');
+  padding: 0; margin: 0;
 }
 
 /**
  * Layout of the main page elements
  */
 #wrapper {
-  margin: 0 auto;
-  width: 980px;
-  padding: 10px;
+  max-width: 980px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto 20px;
+  padding: 0;
+  box-shadow: 0px 5px 5px #999;
 }
 
+#header-container {
+  width: 100%;
+  background-color: #494546;
+}
 
 /**
  * Layout for header
  */
 #header {
-  position: relative;
-  margin-bottom: 40px;
+  padding: 20px 0 20px 0;
+  margin: auto;
+  max-width: 980px;
+  color: #F8ECDE;
 }
 
 .sitetitle {
-  position: absolute;
+  /* position: absolute; */
   top: 6px;
   left: 130px;
   font-size: 48px;
 }
 
 .siteslogan {
-  position: absolute;
+  /* position: absolute; */
   top: 65px;
   left: 130px;
-  font-style: italic;
-  color: #666;
+  font-weight: 300;
+  /* font-style: italic; */
+  color: #eee;
 }
 
 
@@ -53,10 +67,69 @@ body {
  */
 #footer {
   margin-top: 40px;
+  margin-bottom: 20px;
   border-top: 1px solid #ccc;
   padding-top: 15px;
 }
 
 .sitefooter {
   color: #666;
+}
+
+.sitelogo {
+  width: 40px;
+  height: 40px;
+}
+
+/**
+ * Layout for navigation
+ */
+nav {
+  display: block;
+  max-width: 980px;
+  background-color: #F8ECDE;
+  margin: 10px auto 0 auto;
+  padding: 0;
+}
+
+nav a {
+  text-align: center;
+  font-weight: 400;
+  min-width: 50px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #828E8C;
+  text-decoration: none;
+  color: #F8ECDE;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav a.selected::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1000;
+  border-top: 8px solid #E8866C;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  margin-left: -8px;
+}
+
+nav a:hover {
+  background-color: #C5D0C1;
+}
+
+
+nav a.selected {
+  background-color: #E8866C;
+  /* Stuff */
+}
+
+
+h1 {
+  font-weight: 500;
+  color: #555;
 }
