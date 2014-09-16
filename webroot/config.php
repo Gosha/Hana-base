@@ -64,3 +64,13 @@ $hana['favicon']    = 'favicon.ico';
 $hana['modernizr'] = 'js/modernizr.js';
 $hana['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
 $hana['javascript_include'] = array();
+
+/**
+ * Header
+ *
+ */
+$hana['header'] = <<<EOD
+<img class='sitelogo' src='img/petal.png' alt='Hana Logo'/>
+<span class='sitetitle'>はな</span><br>
+<span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
+EOD;
