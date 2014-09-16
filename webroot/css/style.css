@@ -45,11 +45,9 @@ body {
 }
 
 .siteslogan {
-  /* position: absolute; */
   top: 65px;
   left: 130px;
   font-weight: 300;
-  /* font-style: italic; */
   color: #eee;
 }
 
@@ -125,7 +123,6 @@ nav a:hover {
 
 nav a.selected {
   background-color: #E8866C;
-  /* Stuff */
 }
 
 
