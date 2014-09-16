@@ -28,3 +28,12 @@ function myAutoloader($class) {
   }
 }
 spl_autoload_register('myAutoloader');
+
+
+/**
+ * Easy dumping of variables for debugging purposes
+ *
+ */
+function dump($array) {
+  echo "<pre>" . htmlentities(print_r($array, 1)) . "</pre>";
+}
