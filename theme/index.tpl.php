@@ -8,10 +8,13 @@
     <link rel='stylesheet' type='text/css' href='<?=$stylesheet?>'/>
   </head>
   <body>
-    <div id='wrapper'>
-      <div id='header'><?=$header?></div>
-      <div id='main'><?=$main?></div>
-      <div id='footer'><?=$footer?></div>
+    <div id="header-container">
+      <div id='header' class="grid-100"><?=$header?></div>
+      <?php echo CNavigation::GenerateMenu($menu); ?>
+    </div>
+    <div id='wrapper' class="grid-container">
+      <div id='main' class="grid-100"><?=$main?></div>
+      <div id='footer' class="grid-100"><?=$footer?></div>
     </div>
     <?php if(isset($jquery)):?><script src='<?=$jquery?>'></script><?php endif; ?>
     <?php if(isset($javascript_include)): foreach($javascript_include as $val): ?>

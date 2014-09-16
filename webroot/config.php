@@ -66,6 +66,16 @@ $hana['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
 $hana['javascript_include'] = array();
 
 /**
+ * Menu
+ *
+ */
+$hana['menu'] = array(
+  'me' => "me",
+  'hello' => "hello",
+  'source' => "källkod",
+);
+
+/**
  * Header
  *
  */
