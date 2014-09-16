@@ -96,5 +96,5 @@ $hana['header'] = <<<EOD
 EOD;
 
 $hana['footer'] = <<<EOD
-<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer> Test
+<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer>
 EOD;
