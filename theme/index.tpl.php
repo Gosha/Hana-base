@@ -19,7 +19,7 @@
       <div id='footer' class="grid-100"><?=$footer?></div>
     </div>
     <?php if(isset($jquery)):?><script src='<?=$jquery?>'></script><?php endif; ?>
-    <?php if(isset($javascripts)): foreach($javascript_include as $val): ?>
+    <?php if(isset($javascripts)): foreach($javascripts as $val): ?>
       <script src='<?=$val?>'></script>
     <?php endforeach; endif; ?>
   </body>
