@@ -72,9 +72,17 @@ $hana['javascripts'] = array();
  *
  */
 $hana['menu'] = array(
-  'me' => "me",
-  'hello' => "hello",
-  'source' => "källkod",
+  'class' => '',
+  'items' => array(
+    'me' => "me",
+    'reports' => "redovisningar",
+    'source' => "källkod",
+  ),
+  'callback_selected' => function($url) {
+    if(basename($_SERVER['SCRIPT_FILENAME']) == $url . ".php") {
+      return true;
+    }
+  },
 );
 
 /**
