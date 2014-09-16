@@ -1,0 +1,9 @@
+/* TEAM */
+   Student: Georgij Zacharov
+
+/* SITE */
+
+   The website is made for a project for the course Databases and
+   Object Oriented PHP given in Blekinge Tekniska Högskola.
+
+   More info: http://dbwebb.se/oophp/ (Swedish)
