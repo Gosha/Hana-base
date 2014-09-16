@@ -48,7 +48,7 @@ $hana = array();
  *
  */
 $hana['lang']         = 'sv';
-$hana['title_append'] = ' | Hana en webbtemplate';
+$hana['title_append'] = ' | Hana';
 
 /**
  * Theme related settings.
