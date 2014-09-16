@@ -20,10 +20,5 @@ $hana['main'] = <<<EOD
 {$source->View()}
 EOD;
 
-$hana['footer'] = <<<EOD
-<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer>
-EOD;
-
-
 // Finally, leave it all to the rendering phase of Hana.
 include(HANA_THEME_PATH);

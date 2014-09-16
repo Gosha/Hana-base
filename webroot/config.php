@@ -86,3 +86,7 @@ $hana['header'] = <<<EOD
 <span class='sitetitle'>はな</span><br>
 <span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
 EOD;
+
+$hana['footer'] = <<<EOD
+<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer> Test
+EOD;

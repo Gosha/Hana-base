@@ -13,10 +13,6 @@ $hana['main'] = <<<EOD
 <p>Detta är en exempelsida som visar hur Hana ser ut och fungerar.</p>
 EOD;
 
-$hana['footer'] = <<<EOD
-<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer>
-EOD;
-
 
 // Finally, leave it all to the rendering phase of Hana.
 include(HANA_THEME_PATH);
