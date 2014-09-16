@@ -61,7 +61,7 @@ $hana['favicon']    = 'favicon.ico';
  * Settings for JavaScript.
  *
  */
-$hana['modernizr'] = 'js/modernizr.js';
+//$hana['modernizr'] = 'js/modernizr.js';
 $hana['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
 $hana['javascript_include'] = array();
 
