@@ -64,7 +64,8 @@ $hana['favicon']    = 'favicon.ico';
  */
 //$hana['modernizr'] = 'js/modernizr.js';
 $hana['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
-$hana['javascript_include'] = array();
+
+$hana['javascripts'] = array();
 
 /**
  * Menu

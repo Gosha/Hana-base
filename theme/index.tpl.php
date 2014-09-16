@@ -5,9 +5,6 @@
     <title><?=get_title($title)?></title>
     <?php if(isset($favicon)): ?><link rel='shortcut icon' href='<?=$favicon?>'/><?php endif; ?>
     <?php if(isset($modernizr)):?><script src='<?=$modernizr?>'></script><?php endif; ?>
-    <?php foreach($javascripts as $javascript): ?>
-      <script src='<?=$javascript?>'></script>
-    <?php endforeach; ?>
     <?php foreach($stylesheets as $stylesheet): ?>
       <link rel='stylesheet' type='text/css' href='<?=$stylesheet?>'/>
     <?php endforeach; ?>
@@ -22,7 +19,7 @@
       <div id='footer' class="grid-100"><?=$footer?></div>
     </div>
     <?php if(isset($jquery)):?><script src='<?=$jquery?>'></script><?php endif; ?>
-    <?php if(isset($javascript_include)): foreach($javascript_include as $val): ?>
+    <?php if(isset($javascripts)): foreach($javascript_include as $val): ?>
       <script src='<?=$val?>'></script>
     <?php endforeach; endif; ?>
   </body>
