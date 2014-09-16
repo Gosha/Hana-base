@@ -9,8 +9,7 @@ include(__DIR__.'/config.php');
 
 // Do it and store it all in variables in the Hana container.
 $hana['title'] = "404";
-$hana['header'] = "";
-$hana['main'] = "This is a Hana 404. Document is not here.";
+$hana['main'] = "<h1>404</h1>This is a Hana 404. Document is not here.";
 $hana['footer'] = "";
 
 // Send the 404 header
