@@ -31,7 +31,7 @@ body {
  * Layout for header
  */
 #header {
-  padding: 20px 0 20px 0;
+  padding: 20px 10px 20px;
   margin: auto;
   max-width: 980px;
   color: #F8ECDE;
