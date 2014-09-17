@@ -126,7 +126,12 @@ nav a.selected {
 }
 
 
-h1 {
+h1, h2 {
   font-weight: 400;
+  color: #555;
+}
+
+h3 {
+  font-weight: 500;
   color: #555;
 }
