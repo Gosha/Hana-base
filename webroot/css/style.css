@@ -126,6 +126,9 @@ nav a.selected {
 }
 
 
+/**
+ * Headers
+ */
 h1, h2 {
   font-weight: 400;
   color: #555;
