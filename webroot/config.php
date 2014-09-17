@@ -96,5 +96,8 @@ $hana['header'] = <<<EOD
 EOD;
 
 $hana['footer'] = <<<EOD
-<footer><span class='sitefooter'><a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a></span></footer>
+<footer><span class='sitefooter'>
+<a href='https://github.com/GoshaZa/Hana-base'>Hana på GitHub</a> |
+<a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&ucn_task=conformance">Unicorn</a>
+</span></footer>
 EOD;
