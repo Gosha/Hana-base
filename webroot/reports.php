@@ -6,12 +6,13 @@
 // Include the essential config-file which also creates the $hana variable with its defaults.
 include(__DIR__.'/config.php');
 
-$hana['title'] = "Me";
+$hana['title'] = "Redovisningar";
 
 $hana['main'] = <<<EOD
 <h1>Redovisningar</h1>
 <div class="grid-50">
   <h2>Kmom01</h2>
+  <h3>Uppgiften</h3>
   <p>
     Eftersom jag har hållt på med PHP en hel del gick läsanvisningarna
     snabbt att skumma igenom. Vissa småsaker hade jag dock givetvis
@@ -28,11 +29,14 @@ $hana['main'] = <<<EOD
     ändra i <code>.htaccess</code>. Det finner jag lite jobbigt och
     vill helst att allt ska fungera "automagiskt."
   </p>
-  <h3>Allmänt om Anax</h3>
+  <h3>Anax</h3>
   <p>
     Jag har tidigare provat på CodeIgniter och därför kändes Anax
     väldigt bekant. Förstod mig snabbt på filstrukturen och gjordes
-    endast minimala ändringar på min version.
+    endast minimala ändringar på min version. Tyckte att det var
+    jobbigt att behöva ändra på headern i varje fil så fort jag gjorde
+    en ändring så jag flyttade ut den
+    till <code>config.php</code>. Gjorde samma sak med footern.
   </p>
   <p>
     Mitt webb-ramverk fick namnet はな (hana) mest för att det var det
