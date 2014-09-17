@@ -9,8 +9,13 @@ include(__DIR__.'/config.php');
 $hana['title'] = "Me";
 
 $hana['main'] = <<<EOD
-<div class="grid-50">
   <h1>Me</h1>
+<div class="grid-50">
+  <p style="text-align: center; margin-top: 10px;">
+    <img src="img/me.png"/>
+  </p>
+</div>
+<div class="grid-50">
   <p class="head">Hejsan hejsan</p>
   <p>
     Jag heter Gosha, bor och studerar i Linköping.
@@ -30,11 +35,6 @@ $hana['main'] = <<<EOD
     På fritiden brukar jag hålla på med små kodprojekt i diverse språk
     och miljöer. När jag får lust och tid över kan det hända att jag
     sätter mig och pluggar lite japanska.
-  </p>
-</div>
-<div class="grid-50">
-  <p style="text-align: center">
-    <img src="img/me.jpg"/>
   </p>
 </div>
 EOD;
