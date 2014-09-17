@@ -135,3 +135,11 @@ h3 {
   font-weight: 500;
   color: #555;
 }
+
+/**
+ * Text
+ */
+p.head {
+  font-size: 1.1em;
+  font-style: italic;
+}
