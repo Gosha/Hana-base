@@ -76,6 +76,7 @@ $hana['menu'] = array(
   'items' => array(
     'me' => "me",
     'reports' => "redovisningar",
+    'dice' => "tärningsspel",
     'source' => "källkod",
   ),
   'callback_selected' => function($url) {
