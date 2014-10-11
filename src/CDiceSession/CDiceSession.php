@@ -8,29 +8,22 @@ class CDiceSession
 {
   const SESS_VAR = 'dice';
 
-  private $dice = array();
+  private $dice;
 
   public function __construct() {
-    if (isset($_SESSION[self::SESS_VAR])) {
-      $this->dice = $_SESSION[self::SESS_VAR];
-    }
-  }
-
-  public function __destruct() {
-    if (isset($this->dice)) {
-      $_SESSION[self::SESS_VAR] = $this->dice;
-    }
+    $this->dice = new CSessionVar(self::SESS_VAR, array());
   }
 
   public function getDice() {
-    return $this->dice;
+    return $this->dice->get();
   }
 
   public function addDice(CDice $dice) {
-    $this->dice[] = $dice;
+    // Possible because CSessionVar->get() returns a reference
+    array_push($this->dice->get(), $dice);
   }
 
   public function clearDice() {
-    $this->dice = array();
+    $this->dice->clear();
   }
 }
