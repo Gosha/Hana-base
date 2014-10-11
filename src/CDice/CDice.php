@@ -27,10 +27,10 @@ class CDice
     $this->setSides($sides);
 
     if ($value == -1) {
-      $this->setValue(rand(1, $sides));
-    } else {
-      $this->setValue($value);
+      $value = rand(1, $sides);
     }
+
+    $this->setValue($value);
   }
 }
 
