@@ -49,7 +49,7 @@ $hana['main'] = <<<EOD
     Koden skriver jag i emacs på min laptop med linux-distributionen
     Sabayon. Jag har den vanliga LAMP-stacken på laptopen och jobbar i
     första hand lokalt mot koden. Jag pushar även koden till
-    mitt <a href="https://github.com/GoshaZa/Hana-base">repository</a>
+    mitt <a href="https://github.com/Gosha/Hana-base">repository</a>
     på github.
   </p>
   <p>
