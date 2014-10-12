@@ -11,7 +11,7 @@ class CDiceSession
   private $dice;
 
   public function __construct() {
-    $this->dice = new CSessionVar(self::SESS_VAR, array());
+    $this->dice = new CSessionVar($this::SESS_VAR, array());
   }
 
   public function getDice() {
