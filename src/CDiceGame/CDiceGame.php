@@ -57,7 +57,6 @@ class CDiceGame
       $this->message = "Synd! Du fick en etta.";
       return;
     }
-
   }
 
   /**
