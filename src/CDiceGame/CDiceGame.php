@@ -110,8 +110,6 @@ class CDiceGame
       <a href="{$curURL}?game_action=clear">Starta om</a>
 EOF;
 
-    $ret .= dump($this->state->get(), 1);
-
     return $ret;
   }
 }
