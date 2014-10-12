@@ -10,6 +10,8 @@ class CDiceGame
   private $state;
   private $dice;
   private $method;
+  private $cleardice = FALSE;
+  private $message = "";
 
   public function __construct($method = "GET") {
     $this->method = $method;
@@ -47,6 +49,14 @@ class CDiceGame
 
   private function roll() {
     $this->dice->addDice(new CDice());
+
+    if ($this->dice->lastDice()->getValue() == 1) {
+      $this->cleardice = TRUE;
+      $this->state->get()['round'] += 1;
+      $this->message = "Synd! Du fick en etta.";
+      return;
+    }
+
   }
 
   private function save() {
@@ -60,8 +70,14 @@ class CDiceGame
     $this->state->clear();
   }
 
-  public function getState() {
-    return "Hej";
+  public function nextRound() {
+    if ($this->cleardice === TRUE) {
+      $this->dice->clearDice();
+    }
+  }
+
+  public function getMessage() {
+    return $this->message;
   }
 
   public function getDice() {

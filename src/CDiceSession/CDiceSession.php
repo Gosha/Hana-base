@@ -23,6 +23,10 @@ class CDiceSession
     array_push($this->dice->get(), $dice);
   }
 
+  public function lastDice() {
+    return end($this->dice->get());
+  }
+
   public function sum() {
     $sum = 0;
     foreach($this->dice->get() as $dice) {

@@ -14,13 +14,13 @@ $hana['main'] = <<<EOD
 <h1>Tärningsspel</h1>
 <div class="grid-50">
   <p>
-    {$game->getState()}
+    {$game->getButtons()}
   </p>
   <p>
     {$game->getDice()}
   </p>
   <p>
-    {$game->getButtons()}
+    {$game->getMessage()}
   </p>
 </div>
 <div class="grid-50">
@@ -34,6 +34,8 @@ $hana['main'] = <<<EOD
   </p>
 </div>
 EOD;
+
+$game->nextRound();
 
 // Finally, leave it all to the rendering phase of Hana.
 include(HANA_THEME_PATH);
