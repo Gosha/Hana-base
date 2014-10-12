@@ -105,6 +105,13 @@ class CDiceGame
     return $ret;
   }
 
+  public function getScore() {
+    return <<<EOF
+      Poäng: {$this->state->get()['score']}<br>
+      Runda: {$this->state->get()['round']}
+EOF;
+  }
+
   public function getButtons() {
     $ret = "";
     $curURL = current_url();

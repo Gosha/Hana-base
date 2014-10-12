@@ -17,10 +17,13 @@ $hana['main'] = <<<EOD
     {$game->getButtons()}
   </p>
   <p>
-    {$game->getDice()}
+    {$game->getScore()}
   </p>
   <p>
     {$game->getMessage()}
+  </p>
+  <p>
+    {$game->getDice()}
   </p>
 </div>
 <div class="grid-50">
