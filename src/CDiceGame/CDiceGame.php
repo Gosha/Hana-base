@@ -9,13 +9,11 @@ class CDiceGame
   const STATE = 'gamestate';
   private $state;
   private $dice;
-  private $method;
   private $cleardice = FALSE;
   private $cleargame = FALSE;
   private $message = "";
 
-  public function __construct($method = "GET") {
-    $this->method = $method;
+  public function __construct() {
     $this->state = new CSessionVar($this::STATE,
                                    array(
                                          'round' => 0,
@@ -26,11 +24,7 @@ class CDiceGame
   }
 
   private function handleVars() {
-    if ($this->method == "GET") {
-      $vars = &$_GET;
-    } else {
-      $vars = &$_POST;
-    }
+    $vars = &$_GET;
 
     if(!isset($vars['game_action']))
       return;
