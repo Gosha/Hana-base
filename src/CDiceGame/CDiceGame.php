@@ -11,6 +11,7 @@ class CDiceGame
   private $dice;
   private $method;
   private $cleardice = FALSE;
+  private $cleargame = FALSE;
   private $message = "";
 
   public function __construct($method = "GET") {
@@ -62,6 +63,13 @@ class CDiceGame
   private function save() {
     $this->state->get()['score'] += $this->dice->sum();
     $this->state->get()['round'] += 1;
+
+    if ($this->state->get()['score'] >= 100) {
+      $this->message = "Grattis! Du vann!";
+      $this->cleardice = TRUE;
+      $this->cleargame = TRUE;
+    }
+
     $this->dice->clearDice();
   }
 
@@ -73,6 +81,9 @@ class CDiceGame
   public function nextRound() {
     if ($this->cleardice === TRUE) {
       $this->dice->clearDice();
+    }
+    if ($this->cleargame === TRUE) {
+      $this->state->clear();
     }
   }
 
