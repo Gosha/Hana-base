@@ -23,6 +23,9 @@ class CDiceGame
     $this->handleVars();
   }
 
+  /**
+   * Decides which method to run depending on player choice
+   */
   private function handleVars() {
     $vars = &$_GET;
 
@@ -42,6 +45,9 @@ class CDiceGame
     }
   }
 
+  /**
+   * Run if player choses to roll a new dice. Handles loss of points.
+   */
   private function roll() {
     $this->dice->addDice(new CDice());
 
@@ -54,6 +60,9 @@ class CDiceGame
 
   }
 
+  /**
+   * Run if player choses to save. Handles win-conditions
+   */
   private function save() {
     $this->state->get()['score'] += $this->dice->sum();
     $this->state->get()['round'] += 1;
@@ -72,6 +81,9 @@ class CDiceGame
     $this->state->clear();
   }
 
+  /**
+   * Does post-printing modifications
+   */
   public function nextRound() {
     if ($this->cleardice === TRUE) {
       $this->dice->clear();
@@ -81,6 +93,9 @@ class CDiceGame
     }
   }
 
+  /**
+   * An eventual message from the game.
+   */
   public function getMessage() {
     $ret = "";
     if ($this->message !== "") {
@@ -91,6 +106,9 @@ EOF;
     return $ret;
   }
 
+  /**
+   * Pictures of all dice that are counted in the current round.
+   */
   public function getDice() {
     $ret = "";
     foreach($this->dice->get() as $die) {
@@ -105,6 +123,9 @@ EOF;
     return $ret;
   }
 
+  /**
+   * Players current score.
+   */
   public function getScore() {
     return <<<EOF
       Poäng: {$this->state->get()['score']}<br>
@@ -112,6 +133,9 @@ EOF;
 EOF;
   }
 
+  /**
+   * Links for actions possible to take.
+   */
   public function getButtons() {
     $ret = "";
     $curURL = current_url();
