@@ -2,6 +2,9 @@
 <html lang='<?=$lang?>'>
   <head>
     <meta charset='utf-8'/>
+    <meta
+       name="viewport"
+       content=" width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title><?=get_title($title)?></title>
     <?php if(isset($favicon)): ?><link rel='shortcut icon' href='<?=$favicon?>'/><?php endif; ?>
     <?php if(isset($modernizr)):?><script src='<?=$modernizr?>'></script><?php endif; ?>
