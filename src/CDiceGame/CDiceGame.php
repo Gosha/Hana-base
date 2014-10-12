@@ -107,7 +107,7 @@ class CDiceGame
     $ret .= <<<EOF
       <a href="{$curURL}?game_action=roll">Kasta</a>
       <a href="{$curURL}?game_action=save">Spara</a>
-      <a href="{$curURL}?game_action=clear">Rensa</a>
+      <a href="{$curURL}?game_action=clear">Starta om</a>
 EOF;
 
     $ret .= dump($this->state->get(), 1);
