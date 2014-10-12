@@ -2,3 +2,10 @@ img.dice-image {
     width: 30px;
     height: 30px;
 }
+
+.dice-message {
+    diplay: inline-block;
+    background-color: #F8ECDE;
+    padding: 10px;
+    border: 1px solid #828E8C;
+}

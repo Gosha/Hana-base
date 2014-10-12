@@ -88,7 +88,13 @@ class CDiceGame
   }
 
   public function getMessage() {
-    return $this->message;
+    $ret = "";
+    if ($this->message !== "") {
+      $ret = <<<EOF
+        <p class="dice-message">{$this->message}</p>
+EOF;
+    }
+    return $ret;
   }
 
   public function getDice() {
