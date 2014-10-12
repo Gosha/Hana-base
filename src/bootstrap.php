@@ -36,4 +36,9 @@ spl_autoload_register('myAutoloader');
  */
 function dump($array) {
   echo "<pre>" . htmlentities(print_r($array, 1)) . "</pre>";
+/**
+ * Current Hana URL
+ */
+function current_url() {
+  return explode("?", $_SERVER['REQUEST_URI'])[0];
 }

@@ -32,5 +32,11 @@ class CDice
 
     $this->setValue($value);
   }
+
+  public function getImage() {
+    return <<<EOF
+    <img class="dice-image" src="img/dice/{$this->value}.png" />
+EOF;
+  }
 }
 

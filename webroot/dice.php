@@ -6,30 +6,15 @@
 // Include the essential config-file which also creates the $hana variable with its defaults.
 include(__DIR__.'/config.php');
 
-
-$diceSession = new CDiceSession();
-
-if (isset($_GET['roll'])) {
-  $diceSession->addDice(new CDice());
-}
-
-if (isset($_GET['clear'])) {
-  $diceSession->clearDice();
-}
-
-$dice = "";
-
-foreach($diceSession->getDice() as $die) {
-  $dice .= $die->getValue() ." ";
-}
+$game = new CDiceGame();
 
 $hana['title'] = "Dice game";
 
 $hana['main'] = <<<EOD
-<h1>Dice game</h1>
+<h1>Tärningsspel</h1>
 <div class="grid-50">
   <p>
-    {$dice}
+    {$game->printGame()}
   </p>
 </div>
 <div class="grid-50">

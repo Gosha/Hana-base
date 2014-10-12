@@ -55,6 +55,7 @@ $hana['title_append'] = ' | Hana';
  *
  */
 $hana['stylesheets'][] = 'css/style.css';
+$hana['stylesheets'][] = 'css/dice.css';
 $hana['stylesheets'][] = 'css/unsemantic-grid-responsive.css';
 $hana['favicon']    = 'favicon.ico';
 
