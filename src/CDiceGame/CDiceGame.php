@@ -96,6 +96,11 @@ class CDiceGame
     foreach($this->dice->getDice() as $die) {
       $ret .= $die->getImage() ."\n ";
     }
+    $ret .= "<br>";
+
+    if ($this->dice->sum() > 0) {
+      $ret .= "<span class='dice-sum'>{$this->dice->sum()}</span>";
+    }
 
     return $ret;
   }
