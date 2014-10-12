@@ -6,7 +6,7 @@
  */
 class CSessionVar
 {
-  private $data;
+  protected $data;
   private $name;
   private $default;
 

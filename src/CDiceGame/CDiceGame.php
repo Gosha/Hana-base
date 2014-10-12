@@ -70,17 +70,17 @@ class CDiceGame
       $this->cleargame = TRUE;
     }
 
-    $this->dice->clearDice();
+    $this->dice->clear();
   }
 
   private function clear() {
-    $this->dice->clearDice();
+    $this->dice->clear();
     $this->state->clear();
   }
 
   public function nextRound() {
     if ($this->cleardice === TRUE) {
-      $this->dice->clearDice();
+      $this->dice->clear();
     }
     if ($this->cleargame === TRUE) {
       $this->state->clear();
@@ -99,7 +99,7 @@ EOF;
 
   public function getDice() {
     $ret = "";
-    foreach($this->dice->getDice() as $die) {
+    foreach($this->dice->get() as $die) {
       $ret .= $die->getImage() ."\n ";
     }
     $ret .= "<br>";
