@@ -99,7 +99,7 @@ class CDiceGame
     $ret .= "<br>";
 
     if ($this->dice->sum() > 0) {
-      $ret .= "<span class='dice-sum'>{$this->dice->sum()}</span>";
+      $ret .= "<span class='dice-sum'>Summa: {$this->dice->sum()}</span>";
     }
 
     return $ret;
