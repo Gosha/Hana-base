@@ -12,18 +12,18 @@ $hana['title'] = "Dice game";
 
 $hana['main'] = <<<EOD
 <h1>Tärningsspel</h1>
-<div class="grid-25">
+<div class="grid-30">
   <p>
     {$game->getButtons()}
   </p>
   <p>
-    {$game->getScore()}
-  </p>
-  <p>
     {$game->getMessage()}
   </p>
+  <p>
+    {$game->getScore()}
+  </p>
 </div>
-<div class="grid-25">
+<div class="grid-20">
   <p>
     {$game->getDice()}
   </p>
