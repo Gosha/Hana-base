@@ -14,7 +14,13 @@ $hana['main'] = <<<EOD
 <h1>Tärningsspel</h1>
 <div class="grid-50">
   <p>
-    {$game->printGame()}
+    {$game->getState()}
+  </p>
+  <p>
+    {$game->getDice()}
+  </p>
+  <p>
+    {$game->getButtons()}
   </p>
 </div>
 <div class="grid-50">

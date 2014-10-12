@@ -60,21 +60,28 @@ class CDiceGame
     $this->state->clear();
   }
 
-  public function printGame() {
+  public function getState() {
+    return "Hej";
+  }
+
+  public function getDice() {
+    $ret = "";
+    foreach($this->dice->getDice() as $die) {
+      $ret .= $die->getImage() ."\n ";
+    }
+
+    return $ret;
+  }
+
+  public function getButtons() {
     $ret = "";
     $curURL = current_url();
 
     $ret .= <<<EOF
-      <br>
       <a href="{$curURL}?game_action=roll">Kasta</a>
       <a href="{$curURL}?game_action=save">Spara</a>
       <a href="{$curURL}?game_action=clear">Rensa</a>
-      <br><br>
 EOF;
-
-    foreach($this->dice->getDice() as $die) {
-      $ret .= $die->getImage() ."\n ";
-    }
 
     $ret .= dump($this->state->get(), 1);
 
