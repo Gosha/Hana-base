@@ -121,6 +121,61 @@ $hana['main'] = <<<EOD
     abstraherar en runda av tärnkastningar.
   </p>
 </div>
+<div class="clear"></div>
+<div class="grid-50">
+  <h2>Kmom03</h2>
+  <h3>Tidigare erfanhet</h3>
+  <p>
+    Har hållt på med webbutveckling ett tag, och då har MySQL kommit
+    med i erfarenheten ganska naturligt. Har behövt pilla med
+    MySQL-konsollen ett flertal gånger då någon webbapplikation jag
+    installerat börjat krångla.
+  </p>
+  <p>
+    Dock har jag aldrig gjort ett eget projekt med MySQL i grunden,
+    utan bara modifierat och arbetat med färdiga databaser.
+  </p>
+  <p>
+    Förutom MySQL har jag jobbat med SQLite, vilket jag kände var
+    ganska likt att programmera mot. Skillnaden är förstås att man
+    inte pratar mot en server med SQLite
+  </p>
+
+  <h3>Arbeta mot MySQL</h3>
+  <p>
+    Då jag har tidigare erfarenhet med konsollen och phpMyAdmin var
+    det inga bekymmer eller konstigheter. Dock kände jag inte till att
+    det fanns så många olika command-line program för MySQL. Har
+    endast använt <code>mysql</code> och <code>mysqladmin</code> tidigare
+    och det har fungerat utmärkt.
+  </p>
+  <p>
+    Delen om phpMyAdmin innehöll nyheter för min del, har det
+    installerat på min egna server och använt det en hel del när jag
+    jobbat mot webb-hotell.
+  </p>
+  <p>
+    Dock hade jag aldrig testat MySQL Workbench och tycker det verkar
+    som ett finfint verktyg som jag kommer använda mycket när jag
+    jobbar mot en MySQL-server.
+  </p>
+  <p>
+    Jag fick lite problem när jag skulle skapa ett lösenord till BTHs
+    MySQL-server, men efter ett mail till Help-desken löste det sig.
+    Förutom det var det inga konstigheter med att jobba mot den
+    servern.
+  </p>
+
+  <h3>Övningen</h3>
+  <p>
+    <pre>
+  + [ ] Hur gick SQL-övningen, något som var lite svårare i
+  övningen, kändes den lagom?
+    </pre>
+
+  </p>
+</div>
+
 EOD;
 
 
