@@ -138,7 +138,7 @@ $hana['main'] = <<<EOD
   <p>
     Förutom MySQL har jag jobbat med SQLite, vilket jag kände var
     ganska likt att programmera mot. Skillnaden är förstås att man
-    inte pratar mot en server med SQLite
+    inte pratar mot en server med SQLite.
   </p>
 
   <h3>Arbeta mot MySQL</h3>
@@ -150,9 +150,9 @@ $hana['main'] = <<<EOD
     och det har fungerat utmärkt.
   </p>
   <p>
-    Delen om phpMyAdmin innehöll nyheter för min del, har det
+    Delen om phpMyAdmin innehöll inga nyheter för min del, har det
     installerat på min egna server och använt det en hel del när jag
-    jobbat mot webb-hotell.
+    jobbat mot webbhotell.
   </p>
   <p>
     Dock hade jag aldrig testat MySQL Workbench och tycker det verkar
@@ -168,11 +168,21 @@ $hana['main'] = <<<EOD
 
   <h3>Övningen</h3>
   <p>
+    Tycker övningen gav en bra introduktion till SQL. Kände igen det
+    mesta sen tidigare, men vissa saker var bra att repetera.
+  </p>
+  <p>
+    Råkade på några klurigheter, t.ex. om man använder apostrofer för
+    att försöka benämna kolumner blir saker konstiga. Alltså blir t.ex.
     <pre>
-  + [ ] Hur gick SQL-övningen, något som var lite svårare i
-  övningen, kändes den lagom?
+SELECT
+	namnLarare as 'Lärare',
+	YEAR(NOW()) - YEAR(foddLarare) as 'Ålder'
+FROM Larare
+ORDER BY 'Ålder' DESC;
     </pre>
-
+    felsorterat för att jag bett den sortera efter texten 'Ålder'
+    istället för kolumnen med samma namn.
   </p>
 </div>
 
