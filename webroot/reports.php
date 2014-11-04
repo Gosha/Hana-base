@@ -162,8 +162,10 @@ $hana['main'] = <<<EOD
   <p>
     Jag fick lite problem när jag skulle skapa ett lösenord till BTHs
     MySQL-server, men efter ett mail till Help-desken löste det sig.
-    Förutom det var det inga konstigheter med att jobba mot den
-    servern.
+    Lyckades komma åt servern via phpMyAdmin, SSH och via en
+    SSH-tunnel, men min version av MySQL Workbench ville inte ansluta,
+    trots att jag följde tipsen om att kryssa i "Use the old
+    authentication protocol."
   </p>
 
   <h3>Övningen</h3>
